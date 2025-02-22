@@ -3,6 +3,7 @@ const express = require('express');
 const app = express();
 const connectDB = require('./config/database');
 const User = require('./models/user');
+const { default: mongoose } = require('mongoose');
 
 const PORT = process.env.PORT || 4000;
 
@@ -21,6 +22,15 @@ app.post("/signUp", async (req, res) => {
   }
 });
 
+app.get("/feed", async (req, res) => {
+  try {
+    const userFeedData = await User.find({});
+    res.send(userFeedData).json({ message: "All users fetched for feed" });
+  } catch (error) {
+    res.send(error.message).json({ message: "No users found for feed" });
+  }
+});
+
 app.get("/user", async (req, res) => {
   const userEmail = req.body.emailId;
 
@@ -32,12 +42,40 @@ app.get("/user", async (req, res) => {
   }
 });
 
-app.get("/feed", async (req, res) => {
+app.patch("/user/:userId", async (req, res) => {
+  const userId = req.params?.userId;
+  const data = req.body;
+
   try {
-    const userFeedData = await User.find({});
-    res.send(userFeedData).json({ message: "All users fetched for feed" });
+    const UPDATES_ALLOWED = [
+      "photoUrl",
+      "about",
+      "age",
+      "skills",
+      "gender"
+    ]
+
+    // Data sanitizing  started
+    const isAllowed = Object.keys(data).every((k) =>
+      UPDATES_ALLOWED.includes(k)
+    );
+
+    if (!isAllowed) {
+      throw new Error("User Update is not allowed");
+    }
+
+    if (data.skills.length > 10) {
+      throw new Error("Skills cannot be added more than 10");
+    }
+    // Data sanitizing  ended
+
+    const updatedResponse = User.findByIdAndUpdate({ _id: userId }, data, {
+      returnDocument: 'after',
+      runValidators: true
+    });
+    res.send(updatedResponse);
   } catch (error) {
-    res.send(error.message).json({ message: "No users found for feed" });
+    res.send(error.message).json({ message: "User details not updated" });
   }
 });
 
