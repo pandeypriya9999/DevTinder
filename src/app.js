@@ -3,22 +3,49 @@ const express = require('express');
 const app = express();
 const connectDB = require('./config/database');
 const User = require('./models/user');
-const { default: mongoose } = require('mongoose');
+const validateData = require("./utils/validate");
+const bcrypt = require("bcrypt");
 
 const PORT = process.env.PORT || 4000;
 
 app.use(express.json());
 
 app.post("/signUp", async (req, res) => {
-  console.log(req.body);
-  const { firstName, lastName, emailId, password, age, gender } = req.body;
-  const user = new User({ firstName, lastName, emailId, password, age, gender });
 
   try {
+    const { firstName, lastName, emailId, password, age, gender } = req.body;
+
+    //validating rquest first
+    validateData(req);
+
+    //bcrypt password
+    const passwordHash = bcrypt.hash(password, 10);
+
+    const user = new User({ firstName, lastName, emailId, password: , age, gender });
     user.save();
     res.status(200).json({ message: "User added successfully!" });
   } catch (error) {
     res.status(err.statuCode).json({ message: error.message });
+  }
+});
+
+app.post("/login", async (req, res) => {
+
+  try {
+    const { emailId, password } = req.body;
+
+    const user = User.findOne({ emailId: emailId });
+
+    if (!user) throw new Error("User is not registered");
+
+    const isPasswordValidated = bcrypt.compare(password, user.password);
+    if (isPasswordValidated) {
+      res.send("User logged in successfully");
+    } else {
+      res.send("User provided password is not valid");
+    }
+  } catch (err) {
+    res.send(`${err.message} + Login failed`);
   }
 });
 
