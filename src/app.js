@@ -3,13 +3,14 @@ const express = require('express');
 const app = express();
 const connectDB = require('./config/database');
 const User = require('./models/user');
-const validateData = require("./utils/validate");
+const { validateData } = require("./utils/validate");
 const bcrypt = require("bcrypt");
 
 const PORT = process.env.PORT || 4000;
 
 app.use(express.json());
 
+//To register user
 app.post("/signUp", async (req, res) => {
 
   try {
@@ -19,26 +20,27 @@ app.post("/signUp", async (req, res) => {
     validateData(req);
 
     //bcrypt password
-    const passwordHash = bcrypt.hash(password, 10);
+    const passwordHash = await bcrypt.hash(password, 10);
 
-    const user = new User({ firstName, lastName, emailId, password: passwordHash, age, gender });
-    user.save();
+    const user = await new User({ firstName, lastName, emailId, password: passwordHash, age, gender });
+    await user.save();
     res.status(200).json({ message: "User added successfully!" });
   } catch (error) {
-    res.status(err.statuCode).json({ message: error.message });
+    res.status(400).json({ message: error.message });
   }
 });
 
+//To get user logged in
 app.post("/login", async (req, res) => {
 
   try {
     const { emailId, password } = req.body;
 
-    const user = User.findOne({ emailId: emailId });
+    const user = await User.findOne({ emailId: emailId });
 
     if (!user) throw new Error("User is not registered");
 
-    const isPasswordValidated = bcrypt.compare(password, user.password);
+    const isPasswordValidated = await bcrypt.compare(password, user.password);
     if (isPasswordValidated) {
       res.send("User logged in successfully");
     } else {
@@ -49,26 +51,29 @@ app.post("/login", async (req, res) => {
   }
 });
 
+//to fetch all user data
 app.get("/feed", async (req, res) => {
   try {
     const userFeedData = await User.find({});
-    res.send(userFeedData).json({ message: "All users fetched for feed" });
+    res.send(userFeedData);
   } catch (error) {
-    res.send(error.message).json({ message: "No users found for feed" });
+    res.send(error.message);
   }
 });
 
+//to get single user data
 app.get("/user", async (req, res) => {
   const userEmail = req.body.emailId;
 
   try {
     const userData = await User.findOne({ emailId: userEmail });
-    res.send(userData).json({ message: "User details fetched" });
+    res.send(userData);
   } catch (error) {
-    res.send(error.message).json({ message: "User details not fetched" });
+    res.send(error.message)
   }
 });
 
+//To update existed user details
 app.patch("/user/:userId", async (req, res) => {
   const userId = req.params?.userId;
   const data = req.body;
@@ -96,26 +101,29 @@ app.patch("/user/:userId", async (req, res) => {
     }
     // Data sanitizing  ended
 
-    const updatedResponse = User.findByIdAndUpdate({ _id: userId }, data, {
+    const updatedResponse = await User.findByIdAndUpdate({ _id: userId }, data, {
       returnDocument: 'after',
       runValidators: true
     });
-    res.send(updatedResponse);
+    await res.send(updatedResponse);
   } catch (error) {
-    res.send(error.message).json({ message: "User details not updated" });
+    res.send(error.message)
   }
 });
 
+//to delete user
 app.delete("/user", async (req, res) => {
-  const userEmail = req.body.emailId;
+  const userId = req.body.userId;
   try {
-    await User.findByIdAndUpdate({ emailId: userEmail });
-    res.send(`${userEmail} deleted successfully from User collection`);
+    await User.findByIdAndDelete({ _id: userId });
+    res.send(`${userId} deleted successfully from User collection`);
   } catch (error) {
-    res.send(`${userEmail} cannot be deleted from User collection`);
+    console.log(error);
+    res.send(`${userId} cannot be deleted from User collection`);
   }
 });
 
+//To connect with MongoDB
 connectDB().then(() => {
   console.log("Database connection established..");
   app.listen(PORT, () => {
