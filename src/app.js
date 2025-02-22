@@ -21,7 +21,7 @@ app.post("/signUp", async (req, res) => {
     //bcrypt password
     const passwordHash = bcrypt.hash(password, 10);
 
-    const user = new User({ firstName, lastName, emailId, password: , age, gender });
+    const user = new User({ firstName, lastName, emailId, password: passwordHash, age, gender });
     user.save();
     res.status(200).json({ message: "User added successfully!" });
   } catch (error) {
