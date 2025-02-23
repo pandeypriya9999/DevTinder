@@ -2,55 +2,23 @@ require('dotenv').config()
 const express = require('express');
 const app = express();
 const connectDB = require('./config/database');
-const User = require('./models/user');
-const { validateData } = require("./utils/validate");
-const bcrypt = require("bcrypt");
+const cookieParser = require("cookie-parser");
+const logger = require("./utils/logger");
 
-const PORT = process.env.PORT || 4000;
+const { PORT } = process.env;
 
 app.use(express.json());
+app.use(cookieParser());
 
-//To register user
-app.post("/signUp", async (req, res) => {
+const authRouter = require("./routes/auth");
+const profileRouter = require("./routes/profile");
+const connectionRouter = require("./routes/connection");
 
-  try {
-    const { firstName, lastName, emailId, password, age, gender } = req.body;
+app.use("/", authRouter);
+app.use("/", profileRouter);
+app.use("/", connectionRouter);
 
-    //validating rquest first
-    validateData(req);
-
-    //bcrypt password
-    const passwordHash = await bcrypt.hash(password, 10);
-
-    const user = await new User({ firstName, lastName, emailId, password: passwordHash, age, gender });
-    await user.save();
-    res.status(200).json({ message: "User added successfully!" });
-  } catch (error) {
-    res.status(400).json({ message: error.message });
-  }
-});
-
-//To get user logged in
-app.post("/login", async (req, res) => {
-
-  try {
-    const { emailId, password } = req.body;
-
-    const user = await User.findOne({ emailId: emailId });
-
-    if (!user) throw new Error("User is not registered");
-
-    const isPasswordValidated = await bcrypt.compare(password, user.password);
-    if (isPasswordValidated) {
-      res.send("User logged in successfully");
-    } else {
-      res.send("User provided password is not valid");
-    }
-  } catch (err) {
-    res.send(`${err.message} + Login failed`);
-  }
-});
-
+/*
 //to fetch all user data
 app.get("/feed", async (req, res) => {
   try {
@@ -118,17 +86,18 @@ app.delete("/user", async (req, res) => {
     await User.findByIdAndDelete({ _id: userId });
     res.send(`${userId} deleted successfully from User collection`);
   } catch (error) {
-    console.log(error);
+    logger.info(error);
     res.send(`${userId} cannot be deleted from User collection`);
   }
 });
+*/
 
 //To connect with MongoDB
 connectDB().then(() => {
-  console.log("Database connection established..");
+  logger.info("Database connection established");
   app.listen(PORT, () => {
-    console.log(`Server running successfully on ${PORT}`);
+    logger.info(`Server running successfully on ${PORT}`);
   });
 }).catch((err) => {
-  console.log("Database connection not established..");
+  logger.info("Database connection not established");
 });

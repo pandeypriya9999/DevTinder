@@ -1,0 +1,279 @@
+[2025-02-22T22:53:43.862Z] INFO: Application started successfully
+[2025-02-22T22:53:43.866Z] ERROR: An error occurred
+[2025-02-22T22:53:44.268Z] INFO: Database connection established..
+[2025-02-22T22:53:48.595Z] INFO: Application started successfully
+[2025-02-22T22:53:48.596Z] ERROR: An error occurred
+[2025-02-22T22:53:48.994Z] INFO: Database connection established..
+[2025-02-22T22:53:59.104Z] INFO: Application started successfully
+[2025-02-22T22:53:59.105Z] ERROR: An error occurred
+[2025-02-22T22:54:04.094Z] INFO: Application started successfully
+[2025-02-22T22:54:04.095Z] ERROR: An error occurred
+[2025-02-22T22:54:04.480Z] INFO: Database connection established
+[2025-02-22T22:54:24.931Z] INFO: Application started successfully
+[2025-02-22T22:54:24.932Z] ERROR: An error occurred
+[2025-02-22T22:54:25.379Z] INFO: Database connection established
+[2025-02-22T22:54:37.985Z] INFO: Application started successfully
+[2025-02-22T22:54:37.986Z] ERROR: An error occurred
+[2025-02-22T22:54:42.622Z] INFO: Application started successfully
+[2025-02-22T22:54:42.624Z] ERROR: An error occurred
+[2025-02-22T22:54:43.173Z] INFO: Database connection established
+[2025-02-22T22:55:01.216Z] INFO: Database connection established
+[2025-02-22T22:55:02.155Z] INFO: Database connection established
+[2025-02-22T22:56:30.140Z] INFO: Database connection established
+[2025-02-22T22:56:30.143Z] INFO: Server running successfully on 3000
+[2025-02-22T22:59:00.382Z] INFO: Database connection established
+[2025-02-22T22:59:00.387Z] INFO: Server running successfully on 3000
+[2025-02-22T22:59:13.096Z] INFO: Database connection established
+[2025-02-22T22:59:13.101Z] INFO: Server running successfully on 3000
+[2025-02-22T22:59:14.407Z] INFO: Database connection established
+[2025-02-22T22:59:14.410Z] INFO: Server running successfully on 3000
+[2025-02-22T22:59:46.014Z] INFO: Database connection established
+[2025-02-22T22:59:46.018Z] INFO: Server running successfully on 3000
+[2025-02-22T23:00:24.126Z] INFO: Database connection established
+[2025-02-22T23:00:24.134Z] INFO: Server running successfully on 3000
+[2025-02-22T23:00:57.583Z] INFO: Database connection established
+[2025-02-22T23:00:57.589Z] INFO: Server running successfully on 3000
+[2025-02-22T23:01:16.974Z] INFO: Database connection established
+[2025-02-22T23:01:16.981Z] INFO: Server running successfully on 3000
+[2025-02-22T23:01:22.984Z] INFO: Database connection established
+[2025-02-22T23:01:22.989Z] INFO: Server running successfully on 3000
+[2025-02-22T23:01:26.588Z] INFO: Database connection established
+[2025-02-22T23:01:26.591Z] INFO: Server running successfully on 3000
+[2025-02-22T23:01:30.432Z] INFO: {67ba47617cc2295d73cf4358}
+[2025-02-22T23:01:40.046Z] INFO: Wrror is not defined
+[2025-02-22T23:01:58.406Z] INFO: Database connection established
+[2025-02-22T23:01:58.411Z] INFO: Server running successfully on 3000
+[2025-02-22T23:02:02.131Z] INFO: Token is invalid or not present
+[2025-02-22T23:05:48.048Z] INFO: Database connection established
+[2025-02-22T23:05:48.053Z] INFO: Server running successfully on 3000
+[2025-02-22T23:06:07.657Z] INFO: Database connection established
+[2025-02-22T23:06:07.660Z] INFO: Server running successfully on 3000
+[2025-02-22T23:07:44.736Z] INFO: Database connection established
+[2025-02-22T23:07:44.740Z] INFO: Server running successfully on 3000
+[2025-02-22T23:08:25.363Z] INFO: Database connection established
+[2025-02-22T23:08:25.368Z] INFO: Server running successfully on 3000
+[2025-02-22T23:08:55.907Z] INFO: Database connection established
+[2025-02-22T23:08:55.911Z] INFO: Server running successfully on 3000
+[2025-02-22T23:09:13.985Z] INFO: Database connection established
+[2025-02-22T23:09:13.987Z] INFO: Server running successfully on 3000
+[2025-02-22T23:09:17.697Z] INFO: Database connection established
+[2025-02-22T23:09:17.700Z] INFO: Server running successfully on 3000
+[2025-02-22T23:10:18.052Z] INFO: Database connection established
+[2025-02-22T23:10:18.054Z] INFO: Server running successfully on 3000
+[2025-02-22T23:10:29.276Z] INFO: Database connection established
+[2025-02-22T23:10:29.279Z] INFO: Server running successfully on 3000
+[2025-02-22T23:10:36.194Z] INFO: Database connection established
+[2025-02-22T23:10:36.198Z] INFO: Server running successfully on 3000
+[2025-02-22T23:10:48.855Z] INFO: Database connection established
+[2025-02-22T23:10:48.859Z] INFO: Server running successfully on 3000
+[2025-02-22T23:10:54.199Z] INFO: Database connection established
+[2025-02-22T23:10:54.202Z] INFO: Server running successfully on 3000
+[2025-02-22T23:11:02.861Z] INFO: Database connection established
+[2025-02-22T23:11:02.863Z] INFO: Server running successfully on 3000
+[2025-02-22T23:11:23.793Z] INFO: Database connection established
+[2025-02-22T23:11:23.796Z] INFO: Server running successfully on 3000
+[2025-02-22T23:11:24.571Z] INFO: Database connection established
+[2025-02-22T23:11:24.575Z] INFO: Server running successfully on 3000
+[2025-02-22T23:11:28.173Z] INFO: Database connection established
+[2025-02-22T23:11:28.176Z] INFO: Server running successfully on 3000
+[2025-02-22T23:11:38.231Z] INFO: Database connection established
+[2025-02-22T23:11:38.233Z] INFO: Server running successfully on 3000
+[2025-02-22T23:11:47.583Z] INFO: Database connection established
+[2025-02-22T23:11:47.586Z] INFO: Server running successfully on 3000
+[2025-02-22T23:12:08.581Z] INFO: Database connection established
+[2025-02-22T23:12:08.584Z] INFO: Server running successfully on 3000
+[2025-02-22T23:12:21.638Z] INFO: Database connection established
+[2025-02-22T23:12:21.640Z] INFO: Server running successfully on 3000
+[2025-02-22T23:12:22.895Z] INFO: Database connection established
+[2025-02-22T23:12:22.898Z] INFO: Server running successfully on 3000
+[2025-02-22T23:12:24.172Z] INFO: Database connection established
+[2025-02-22T23:12:24.174Z] INFO: Server running successfully on 3000
+[2025-02-22T23:13:07.113Z] INFO: Database connection established
+[2025-02-22T23:13:07.116Z] INFO: Server running successfully on 3000
+[2025-02-22T23:13:29.638Z] INFO: Database connection established
+[2025-02-22T23:13:29.640Z] INFO: Server running successfully on 3000
+[2025-02-22T23:13:33.377Z] INFO: Database connection established
+[2025-02-22T23:13:33.379Z] INFO: Server running successfully on 3000
+[2025-02-22T23:14:19.640Z] INFO: Database connection established
+[2025-02-22T23:14:19.643Z] INFO: Server running successfully on 3000
+[2025-02-22T23:14:49.523Z] INFO: Database connection established
+[2025-02-22T23:14:49.526Z] INFO: Server running successfully on 3000
+[2025-02-22T23:15:06.638Z] INFO: Database connection established
+[2025-02-22T23:15:06.643Z] INFO: Server running successfully on 3000
+[2025-02-22T23:15:20.205Z] INFO: Database connection established
+[2025-02-22T23:15:20.209Z] INFO: Server running successfully on 3000
+[2025-02-22T23:16:02.596Z] INFO: Database connection established
+[2025-02-22T23:16:02.601Z] INFO: Server running successfully on 3000
+[2025-02-22T23:17:53.367Z] INFO: Database connection established
+[2025-02-22T23:17:53.372Z] INFO: Server running successfully on 3000
+[2025-02-22T23:18:05.642Z] INFO: Database connection established
+[2025-02-22T23:18:05.646Z] INFO: Server running successfully on 3000
+[2025-02-22T23:18:06.594Z] INFO: Database connection established
+[2025-02-22T23:18:06.598Z] INFO: Server running successfully on 3000
+[2025-02-22T23:18:12.009Z] INFO: Database connection established
+[2025-02-22T23:18:12.012Z] INFO: Server running successfully on 3000
+[2025-02-22T23:18:18.907Z] INFO: Database connection established
+[2025-02-22T23:18:18.909Z] INFO: Server running successfully on 3000
+[2025-02-22T23:18:42.114Z] INFO: Database connection established
+[2025-02-22T23:18:42.117Z] INFO: Server running successfully on 3000
+[2025-02-22T23:18:55.078Z] INFO: Database connection established
+[2025-02-22T23:18:55.082Z] INFO: Server running successfully on 3000
+[2025-02-22T23:19:09.025Z] INFO: No user profile to show
+[2025-02-22T23:19:17.081Z] INFO: No user profile to show
+[2025-02-22T23:19:24.933Z] INFO: Database connection established
+[2025-02-22T23:19:24.936Z] INFO: Server running successfully on 3000
+[2025-02-22T23:19:30.002Z] INFO: Database connection established
+[2025-02-22T23:19:30.007Z] INFO: Server running successfully on 3000
+[2025-02-22T23:19:56.765Z] INFO: Database connection established
+[2025-02-22T23:19:56.768Z] INFO: Server running successfully on 3000
+[2025-02-22T23:20:04.557Z] INFO: No user profile to show
+[2025-02-22T23:20:32.573Z] INFO: Database connection established
+[2025-02-22T23:20:32.579Z] INFO: Server running successfully on 3000
+[2025-02-22T23:20:34.155Z] INFO: Database connection established
+[2025-02-22T23:20:34.157Z] INFO: Server running successfully on 3000
+[2025-02-22T23:20:36.501Z] INFO: No user profile to show
+[2025-02-22T23:21:26.456Z] INFO: Database connection established
+[2025-02-22T23:21:26.459Z] INFO: Server running successfully on 3000
+[2025-02-22T23:22:15.557Z] INFO: Database connection established
+[2025-02-22T23:22:15.562Z] INFO: Server running successfully on 3000
+[2025-02-22T23:22:17.181Z] INFO: Database connection established
+[2025-02-22T23:22:17.183Z] INFO: Server running successfully on 3000
+[2025-02-22T23:22:45.448Z] INFO: Database connection established
+[2025-02-22T23:22:45.452Z] INFO: Server running successfully on 3000
+[2025-02-22T23:23:01.710Z] INFO: Database connection established
+[2025-02-22T23:23:01.713Z] INFO: Server running successfully on 3000
+[2025-02-22T23:23:04.221Z] INFO: undefined
+[2025-02-22T23:23:22.196Z] INFO: Database connection established
+[2025-02-22T23:23:22.200Z] INFO: Server running successfully on 3000
+[2025-02-22T23:23:47.738Z] INFO: Database connection established
+[2025-02-22T23:23:47.740Z] INFO: Server running successfully on 3000
+[2025-02-22T23:23:54.901Z] INFO: undefined
+[2025-02-22T23:24:08.397Z] INFO: Database connection established
+[2025-02-22T23:24:08.402Z] INFO: Server running successfully on 3000
+[2025-02-22T23:24:09.504Z] INFO: undefined
+[2025-02-22T23:24:29.457Z] INFO: Database connection established
+[2025-02-22T23:24:29.462Z] INFO: Server running successfully on 3000
+[2025-02-22T23:24:46.667Z] INFO: undefined
+[2025-02-22T23:26:12.024Z] INFO: Database connection established
+[2025-02-22T23:26:12.031Z] INFO: Server running successfully on 3000
+[2025-02-22T23:29:30.165Z] INFO: Database connection established
+[2025-02-22T23:29:30.172Z] INFO: Server running successfully on 3000
+[2025-02-22T23:29:33.435Z] INFO: {67ba47617cc2295d73cf4358}
+[2025-02-22T23:30:31.086Z] INFO: Database connection established
+[2025-02-22T23:30:31.089Z] INFO: Server running successfully on 3000
+[2025-02-22T23:30:33.054Z] INFO: {67ba47617cc2295d73cf4358}
+[2025-02-22T23:30:33.950Z] INFO: {67ba47617cc2295d73cf4358}
+[2025-02-22T23:31:12.314Z] INFO: Database connection established
+[2025-02-22T23:31:43.158Z] INFO: Database connection established
+[2025-02-22T23:31:43.166Z] INFO: Server running successfully on 3000
+[2025-02-22T23:31:47.042Z] INFO: {67ba47617cc2295d73cf4358}
+[2025-02-22T23:32:19.689Z] INFO: {67ba47617cc2295d73cf4358}
+[2025-02-22T23:32:58.822Z] INFO: Database connection established
+[2025-02-22T23:32:58.826Z] INFO: Server running successfully on 3000
+[2025-02-22T23:33:03.672Z] INFO: {67ba47617cc2295d73cf4358}
+[2025-02-22T23:33:03.719Z] INFO: {
+  _id: new ObjectId('67ba47617cc2295d73cf4358'),
+  firstName: 'Abhisehk',
+  lastName: 'Singh',
+  emailId: 'abhi@gmail.com',
+  password: '$2b$10$tJPTM1WkSHBNM80yveICXuPpA2bjyxP5GqV3LuHYgcjFqVphHvGou',
+  age: 30,
+  gender: 'male',
+  photoUrl: 'https://www.nicepng.com/png/detail/72-729987_big-image-user-clipart-png.png',
+  skills: [ 'Go', 'Node', 'Aws' ],
+  createdAt: 2025-02-22T21:53:37.953Z,
+  updatedAt: 2025-02-22T22:01:17.265Z,
+  __v: 0
+}
+[2025-02-22T23:33:15.120Z] INFO: Database connection established
+[2025-02-22T23:33:15.123Z] INFO: Server running successfully on 3000
+[2025-02-22T23:33:22.608Z] INFO: Database connection established
+[2025-02-22T23:33:22.611Z] INFO: Server running successfully on 3000
+[2025-02-22T23:37:04.450Z] INFO: Database connection established
+[2025-02-22T23:37:04.454Z] INFO: Server running successfully on 3000
+[2025-02-22T23:37:27.624Z] INFO: Database connection established
+[2025-02-22T23:37:27.628Z] INFO: Server running successfully on 3000
+[2025-02-22T23:37:48.699Z] INFO: Database connection established
+[2025-02-22T23:37:48.702Z] INFO: Server running successfully on 3000
+[2025-02-22T23:38:09.984Z] INFO: Database connection established
+[2025-02-22T23:38:09.987Z] INFO: Server running successfully on 3000
+[2025-02-22T23:38:28.039Z] INFO: Database connection established
+[2025-02-22T23:38:28.042Z] INFO: Server running successfully on 3000
+[2025-02-22T23:39:41.474Z] INFO: Database connection established
+[2025-02-22T23:39:41.478Z] INFO: Server running successfully on 3000
+[2025-02-22T23:40:55.363Z] INFO: Database connection established
+[2025-02-22T23:40:55.367Z] INFO: Server running successfully on 3000
+[2025-02-22T23:40:58.747Z] INFO: Database connection established
+[2025-02-22T23:40:58.749Z] INFO: Server running successfully on 3000
+[2025-02-22T23:45:02.031Z] INFO: Database connection established
+[2025-02-22T23:45:02.036Z] INFO: Server running successfully on 3000
+[2025-02-22T23:48:45.864Z] INFO: Database connection established
+[2025-02-22T23:48:45.871Z] INFO: Server running successfully on 3000
+[2025-02-23T00:03:36.946Z] INFO: Database connection established
+[2025-02-23T00:03:36.950Z] INFO: Server running successfully on 3000
+[2025-02-23T00:33:33.560Z] INFO: Database connection established
+[2025-02-23T00:33:33.567Z] INFO: Server running successfully on 3000
+[2025-02-23T00:34:31.942Z] INFO: Database connection established
+[2025-02-23T00:34:31.944Z] INFO: Server running successfully on 3000
+[2025-02-23T00:34:51.323Z] INFO: Database connection established
+[2025-02-23T00:34:51.326Z] INFO: Server running successfully on 3000
+[2025-02-23T00:36:02.406Z] INFO: Database connection established
+[2025-02-23T00:36:02.410Z] INFO: Server running successfully on 3000
+[2025-02-23T00:36:15.770Z] INFO: Database connection established
+[2025-02-23T00:36:15.773Z] INFO: Server running successfully on 3000
+[2025-02-23T00:36:28.894Z] INFO: Database connection established
+[2025-02-23T00:36:28.897Z] INFO: Server running successfully on 3000
+[2025-02-23T00:36:39.673Z] INFO: Database connection established
+[2025-02-23T00:36:39.677Z] INFO: Server running successfully on 3000
+[2025-02-23T00:36:55.827Z] INFO: Database connection established
+[2025-02-23T00:36:55.830Z] INFO: Server running successfully on 3000
+[2025-02-23T00:37:33.807Z] INFO: Database connection established
+[2025-02-23T00:37:33.809Z] INFO: Server running successfully on 3000
+[2025-02-23T00:37:49.597Z] INFO: Database connection established
+[2025-02-23T00:37:49.600Z] INFO: Server running successfully on 3000
+[2025-02-23T00:38:07.547Z] INFO: Database connection established
+[2025-02-23T00:38:07.551Z] INFO: Server running successfully on 3000
+[2025-02-23T00:38:26.536Z] INFO: Database connection established
+[2025-02-23T00:38:26.540Z] INFO: Server running successfully on 3000
+[2025-02-23T00:38:46.575Z] INFO: Database connection established
+[2025-02-23T00:38:46.582Z] INFO: Server running successfully on 3000
+[2025-02-23T00:38:58.326Z] INFO: Database connection established
+[2025-02-23T00:38:58.329Z] INFO: Server running successfully on 3000
+[2025-02-23T00:38:59.626Z] INFO: Database connection established
+[2025-02-23T00:38:59.628Z] INFO: Server running successfully on 3000
+[2025-02-23T00:39:00.862Z] INFO: Database connection established
+[2025-02-23T00:39:00.865Z] INFO: Server running successfully on 3000
+[2025-02-23T00:42:52.207Z] INFO: Database connection established
+[2025-02-23T00:42:52.212Z] INFO: Server running successfully on 3000
+[2025-02-23T00:43:42.484Z] INFO: Database connection established
+[2025-02-23T00:43:42.489Z] INFO: Server running successfully on 3000
+[2025-02-23T00:43:54.367Z] INFO: Database connection established
+[2025-02-23T00:43:54.369Z] INFO: Server running successfully on 3000
+[2025-02-23T00:43:57.744Z] INFO: Database connection established
+[2025-02-23T00:43:57.748Z] INFO: Server running successfully on 3000
+[2025-02-23T00:44:18.808Z] INFO: Database connection established
+[2025-02-23T00:44:18.813Z] INFO: Server running successfully on 3000
+[2025-02-23T00:44:31.804Z] INFO: Database connection established
+[2025-02-23T00:44:31.810Z] INFO: Server running successfully on 3000
+[2025-02-23T00:45:01.268Z] INFO: Database connection established
+[2025-02-23T00:45:01.274Z] INFO: Server running successfully on 3000
+[2025-02-23T00:45:18.146Z] INFO: Database connection established
+[2025-02-23T00:45:18.152Z] INFO: Server running successfully on 3000
+[2025-02-23T00:45:27.151Z] INFO: Database connection established
+[2025-02-23T00:45:27.155Z] INFO: Server running successfully on 3000
+[2025-02-23T00:45:27.971Z] INFO: Database connection established
+[2025-02-23T00:45:27.974Z] INFO: Server running successfully on 3000
+[2025-02-23T00:46:47.662Z] INFO: Database connection established
+[2025-02-23T00:46:47.666Z] INFO: Server running successfully on 3000
+[2025-02-23T00:47:17.811Z] INFO: Database connection established
+[2025-02-23T00:47:17.813Z] INFO: Server running successfully on 3000
+[2025-02-23T00:47:19.993Z] INFO: Database connection established
+[2025-02-23T00:47:19.997Z] INFO: Server running successfully on 3000
+[2025-02-23T00:47:31.163Z] INFO: Database connection established
+[2025-02-23T00:47:31.168Z] INFO: Server running successfully on 3000
+[2025-02-23T00:49:33.323Z] INFO: Database connection established
+[2025-02-23T00:49:33.327Z] INFO: Server running successfully on 3000
+[2025-02-23T00:51:07.140Z] INFO: Database connection established
+[2025-02-23T00:51:07.144Z] INFO: Server running successfully on 3000
+[2025-02-23T00:53:04.402Z] INFO: Database connection established
+[2025-02-23T00:53:04.409Z] INFO: Server running successfully on 3000
