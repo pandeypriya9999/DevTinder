@@ -5,13 +5,11 @@ const authUser = require("../middlewares/auth");
 const logger = require("../utils/logger");
 const ConnectionRequest = require("../models/connectionRequest");
 
-//to fetch user profile based JWT token
 connectionRouter.post("/request/send/:status/:toUserId", authUser, async (req, res) => {
   try {
     const fromUserId = req.user._id;
     const toUserId = req.params.toUserId;
     const status = req.params.status;
-    console.log(fromUserId, toUserId, status);
 
     const allowedStatusType = ["interested", "ignored"];
     if (!allowedStatusType.includes(status)) {
@@ -49,4 +47,36 @@ connectionRouter.post("/request/send/:status/:toUserId", authUser, async (req, r
   }
 });
 
+connectionRouter.post("/request/review/:status/:requestId", authUser, async (req, res) => {
+  try {
+    const loggedInUser = req.user;
+    const requestId = req.params.requestId;
+    const status = req.params.status;
+
+    const allowedStatusType = ["accepted", "rejected"];
+    if (!allowedStatusType.includes(status)) {
+      return res.status(400).json(`${status} : Status type is invalid`);
+    }
+
+    const connectionRequest = await ConnectionRequest.findOne({
+      _id: requestId,
+      toUserId: loggedInUser._id,
+      status: "interested"
+    });
+
+    if (!connectionRequest) {
+      return res.status(404).json({ message: `No connection request ${status} ` });
+    }
+
+    connectionRequest.status = status;
+    const data = await connectionRequest.save();
+    res.json({
+      message: `Connection request ${status} `,
+      data
+    })
+  } catch (err) {
+    res.send(err.message);
+  }
+});
 module.exports = connectionRouter;
+

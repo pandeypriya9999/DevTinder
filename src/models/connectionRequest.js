@@ -5,10 +5,12 @@ const connectionRequestSchema = new mongoose.Schema({
 
   fromUserId: {
     type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
     required: true
   },
   toUserId: {
     type: mongoose.Schema.Types.ObjectId,
+    ref: "User",
     required: true
   },
   status: {
@@ -23,15 +25,15 @@ const connectionRequestSchema = new mongoose.Schema({
   timestamps: true
 });
 
-connectionRequestSchema.pre(function (next) {
-  const connectionRequest = this;
+// connectionRequestSchema.pre(function (next) {
+//   const connectionRequest = this;
 
-  if (connectionRequest.fromUserId.equals(connectionRequest.toUserId)) {
-    throw new Error("You cannot send request to yourself");
-  }
+//   if (connectionRequest.fromUserId.equals(connectionRequest.toUserId)) {
+//     throw new Error("You cannot send request to yourself");
+//   }
 
-  next();
-})
+//   next();
+// })
 
 //Created connection request model
 const ConnectionRequestModel = new mongoose.model("Connections", connectionRequestSchema);
