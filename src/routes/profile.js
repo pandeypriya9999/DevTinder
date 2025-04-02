@@ -28,7 +28,9 @@ profileRouter.patch("/profile/edit", authUser, async (req, res) => {
       "about",
       "age",
       "skills",
-      "gender"
+      "gender",
+      "firstName",
+      "lastName"
     ]
 
     // Data sanitizing  started
@@ -40,7 +42,7 @@ profileRouter.patch("/profile/edit", authUser, async (req, res) => {
       throw new Error("User Update is not allowed");
     }
 
-    if (data.skills.length > 10) {
+    if (data.skills && data.skills.length > 10) {
       throw new Error("Skills cannot be added more than 10");
     }
     // Data sanitizing  ended
