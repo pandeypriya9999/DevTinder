@@ -29,26 +29,34 @@ authRouter.post("/signUp", async (req, res) => {
 
 //To get user logged in
 authRouter.post("/login", async (req, res) => {
-
   try {
     const { emailId, password } = req.body;
 
+    // Find the user by email
     const user = await User.findOne({ emailId: emailId });
 
-    if (!user) throw new Error("User is not registered");
+    if (!user) {
+      // User not found
+      return res.status(404).json({ message: "User is not registered" });
+    }
 
+    // Validate the password
     const isPasswordValidated = await user.passwordValidated(password);
 
     if (isPasswordValidated) {
+      // Generate JWT token
       const token = await user.getJWT();
       res.cookie("token", token, { expires: new Date(Date.now() + 12 * 3600000) });
 
-      res.send(user);
+      // Send success response
+      return res.status(200).json(user);
     } else {
-      res.send("User provided password is not valid");
+      // Invalid password
+      return res.status(401).json({ message: "User provided password is not valid" });
     }
   } catch (err) {
-    res.send(`${err.message} + Login failed`);
+    // Internal server error
+    return res.status(500).json({ message: `Login failed: ${err.message}` });
   }
 });
 
