@@ -6,7 +6,7 @@ const userRouter = express.Router();
 
 const USER_DATA = 'firstName lastName age gender photoUrl about skills';
 
-userRouter.get("/user/requests/recieved", authUser, async (req, res) => {
+userRouter.get("/user/requests/received", authUser, async (req, res) => {
   try {
     const loggedInUser = req.user;
 
